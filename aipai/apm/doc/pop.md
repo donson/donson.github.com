@@ -168,7 +168,7 @@
         var btn = $(this);
         pop({
             ref : btn,      //参照目标：当前按钮
-            refTop : 20,  //相对参照目标高度偏移量
+            refTop : 20,    //相对参照目标高度偏移量
             ti : '下载拍大师,录制并发布视频',
             con : '<div class="pm_pds"><a target="_blank" href="http://app.aipai.com/paidashi"></a></div>',
             isClose : false,    //隐藏关闭按钮
@@ -209,7 +209,6 @@
                                     <a target="_blank" href="http://vip.aipai.com">开通VIP享受更多鲜花</a>\
                                 </div>\
                             </div>';
-                //<span class="hidden">输入有误，请重新输入</span>\
             html = pmChoose + pmForm;
             return html;
         },
