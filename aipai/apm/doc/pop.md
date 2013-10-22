@@ -75,7 +75,7 @@
                         ['50', '50', 'http://www.aipai.com/'], //key, value, link
                         ['30', '30', 'http://www.baidu.com/'],
                         ['20', '20', 'http://www.qq.com/'],
-                        ['10', '10', 'http://www.163.com/]
+                        ['10', '10', 'http://www.163.com/']
                     ] 
             });
             return pmChoose;
