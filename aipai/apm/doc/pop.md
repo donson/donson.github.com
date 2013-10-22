@@ -23,7 +23,7 @@
 ```javascript
     opts = {
         id : 'pop_abc'	
-        //弹出层的id，不填会调用$.uuid生成一个随机id：pop_697a6437-7743-5474-8d12-ac9bd9929ac6
+        //弹出层的id，不填会调用uuid生成一个随机id：pop_697a6437-7743-5474-8d12-ac9bd9929ac6
     };
 ```
 
