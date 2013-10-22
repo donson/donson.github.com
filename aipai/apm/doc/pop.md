@@ -1,25 +1,60 @@
 #apm.pop API
 
+
+
+##参数
+
+* 默认参数
+```javascript
+    opts = {
+        ref     : null,     //参照目标
+        refTop  : 0,
+        pos     : '',       //定位方向: '' || center
+        isClose : true,
+        con     : '',       //html代码
+        btns : [{           //按钮
+            text : '关闭',
+            handler : 'close'
+        }],
+        onShow : function(){}
+    };
+```
+
+* 参数id
+```javascript
+    opts = {
+        id : 'pop_abc'
+    };
+```
+
+* 参数ref & refTop 
+```javascript
+    opts = {
+        ref : $('#mod'),
+        refTop : 20
+    };
+```
+
 ##基本使用
 
-* 1.使用SeaJS模块化，require 书写约定
+* 使用SeaJS模块化，require 书写约定
 ```javascript
-define(function(require, exports, module) {
-	var pop = require('apm/pop');
-    pop({
-        msg : '这是一个提示';
-    });
-});
-```
-
-* 2.一个简单的提示框 
-```javascript
-    pop({
-        msg : '这是一个提示';
+    define(function(require, exports, module) {
+        var pop = require('apm/pop');
+        pop({
+            msg : '这是一个提示';
+        });
     });
 ```
 
-* 3.一个简单的确认框 
+* 一个简单的提示框 
+```javascript
+    pop({
+        msg : '这是一个提示';
+    });
+```
+
+* 一个简单的确认框 
 ```javascript
     pop({
         msg : '这是一个confirm.',
@@ -36,7 +71,7 @@ define(function(require, exports, module) {
     });
 ```
 
-* 4.Example1
+* Example1
 ```javascript
     var button = $.query('#pop_exa1');
     button.click(function(){
@@ -60,7 +95,7 @@ define(function(require, exports, module) {
     });
 ```
 
-* 5.Example2
+* Example2
 ```javascript
     pop({
         ti : '赠送鲜花',
