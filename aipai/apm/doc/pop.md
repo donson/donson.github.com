@@ -23,15 +23,16 @@
 * 参数id
 ```javascript
     opts = {
-        id : 'pop_abc'
+        id : 'pop_abc'	
+        //弹出层的id，不填会调用$.uuid生成一个随机id：pop_697a6437-7743-5474-8d12-ac9bd9929ac6
     };
 ```
 
 * 参数ref & refTop 
 ```javascript
     opts = {
-        ref : $('#mod'),
-        refTop : 20
+        ref : $('#mod'),	//参照目标，传入一个af对象，以对象底部为参照
+        refTop : 20			//对参照目标的一个偏移量，可以传负数
     };
 ```
 
