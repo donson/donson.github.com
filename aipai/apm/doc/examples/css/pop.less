@@ -1,0 +1,213 @@
+/* Mixin */
+@x : 1.5;
+
+/*pop*/
+@pop_width : 432px;
+@pop_path : '';
+
+#pop_overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#000;
+    top:0;
+    left:0;
+    opacity:0.5;
+    z-index:5000;
+}
+#pop_dialogs{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:6000;
+    .pop_mod{
+        margin-left:-(@pop_width/(@x*2));
+        position:absolute;
+        left:50%;
+    }
+}
+.pop_mod{
+    width:(@pop_width/@x);
+    background:#F5F5F5;
+    margin:0 auto;
+    position:relative;
+    z-index:6000;
+    .pm_hd{
+        height:(66px/@x);
+        line-height:(66px/@x);
+        font-size:(30px/@x);
+        padding:0 (9px/@x);
+        overflow:hidden;
+        color:#555555;
+        background:#e2e2e2;
+        text-align:center;
+    }
+    .pm_bd{
+        min-height:(168px/@x);
+    }
+    .pm_ft{
+        height:(57px/@x);
+        padding:0 (18px/@x) (18px/@x);
+        overflow:hidden;
+        span{
+            height:(57px/@x);
+            line-height:(60px/@x);
+            font-size:(27px/@x);
+            display:block;
+            text-align:center;
+            color:#ffffff;
+            background:#FFAE00;
+            cursor:pointer;
+            a{
+                color:#ffffff;
+            }
+        }
+        .gray{
+            background:#555555;
+            
+        }
+    }
+    .pm_ft_11{
+        span{
+            width:(189px/@x);
+            float:left;
+        }
+        span:last-child{
+            float:right;
+        }
+    }
+    .pm_close{
+        width:(27px/@x);
+        height:(27px/@x);
+        top:(9px/@x);
+        right:(9px/@x);
+        position:absolute;
+        text-indent:-9999px;
+        overflow:hidden;
+        background:url(pop/ico_close.png) no-repeat;
+        background-size:100%;
+    }
+    .pm_msg{
+        padding:(60px/@x) (36px/@x) (45px/@x);
+        font-size:(24px/@x);
+        line-height:(33px/@x);
+        text-align:center;
+        color:#555555;
+        word-break:break-all;
+        a{
+            color:#ffae00;
+        }
+    }
+    .pm_choose{
+        padding-bottom:(15px/@x);
+        li, a{
+            height:(57px/@x);
+            line-height:(57px/@x);
+            padding-left:(18px/@x);
+            font-size:(24px/@x);
+            display:block;
+            border-bottom:1px solid #E7E7E7;
+            color:#8E8D8C;
+        }
+        li:last-child, a:last-child{
+            border-bottom:none;
+        }
+        .cur, a:hover{
+            color:#FFAE00;
+            border-bottom:1px solid #fffce4;
+            position:relative;
+            top:-1px;
+            background:#fffce4 url(pop/ico_choose.png) (396px/@x) center no-repeat;
+            background-size:27px/@x 27px/@x;
+        }
+    }
+    .pm_form{
+        width:(396px/@x);
+        margin:0 auto;
+        .pm_fin{
+            border:1px solid #B3B3B3;
+            background:#FFFFFF;
+            position:relative;
+            input,span{
+                height:(48px/@x);
+                line-height:normal;
+                width:((396px-30px)/@x - 2px);
+                padding:0 (15px/@x);
+                font-size:(24px/@x);
+                border:0 none;
+            }
+            span{
+                display:block;
+                position:absolute;
+                line-height:(48px/@x);
+                z-index:6500;
+                top:0px;
+                left:0px;
+                background:#FFFFFF;
+                color:#F00;
+            }
+        }
+        .pm_ftxt{
+            height:(33px/@x);
+            margin:(12px/@x) 0 (15px/@x);
+            font-size:(18px/@x);
+            line-height:(33px/@x);
+            color:#888888;
+            overflow:hidden;
+            span{
+                float:left;
+            }
+            a{
+                float:right;
+                color:#ffae00;
+            }
+        }
+    }
+    .pm_handler{
+        width: (396px/@x);
+        margin: (18px/@x) auto;
+        overflow: hidden;
+        li{
+            height: (57px/@x);
+            margin-bottom: 6px/@x;
+            border: 1px solid #e8e8e8;
+            background: #fff;
+            position: relative;
+            span{
+                display: block;
+                float: right;
+                width: 30px/@x;
+                height: 30px/@x;
+                margin: 15px/@x 0 0 0;
+                background:url(pop/ico_arrow.png) no-repeat;
+                background-size: 100%;
+            }
+            .tips{
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                color: #333333;
+                font-size: (21px/@x);
+                width: 100%;
+                height: (60px/@x);
+                line-height: (60px/@x);
+                padding-left:(12px/@x);
+            }
+        }
+        .handler_con:hover{
+            background: #f3f3f3;
+            .tips{
+                color: #808080;
+            }
+        }
+    }
+    .pm_pds{
+        height:(291px/@x);
+        margin-bottom:(12px/@x);
+        background:url(pop/pop_pds.jpg) no-repeat;
+        background-size:100%;
+    }
+}
+

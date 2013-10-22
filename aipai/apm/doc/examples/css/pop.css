@@ -1,0 +1,21 @@
+#pop_overlay{position:absolute;width:100%;height:100%;background:#000;top:0;left:0;opacity:.5;z-index:5000}
+#pop_dialogs{width:100%;position:absolute;top:0;left:0;z-index:6000}#pop_dialogs .pop_mod{margin-left:-144px;position:absolute;left:50%}
+.pop_mod{width:288px;background:#f5f5f5;margin:0 auto;position:relative;z-index:6000}.pop_mod .pm_hd{height:44px;line-height:44px;font-size:20px;padding:0 6px;overflow:hidden;color:#555;background:#e2e2e2;text-align:center}
+.pop_mod .pm_bd{min-height:112px}
+.pop_mod .pm_ft{height:38px;padding:0 12px 12px;overflow:hidden}.pop_mod .pm_ft span{height:38px;line-height:40px;font-size:18px;display:block;text-align:center;color:#fff;background:#ffae00;cursor:pointer}.pop_mod .pm_ft span a{color:#fff}
+.pop_mod .pm_ft .gray{background:#555}
+.pop_mod .pm_ft_11 span{width:126px;float:left}
+.pop_mod .pm_ft_11 span:last-child{float:right}
+.pop_mod .pm_close{width:18px;height:18px;top:6px;right:6px;position:absolute;text-indent:-9999px;overflow:hidden;background:url(pop/ico_close.png) no-repeat;background-size:100%}
+.pop_mod .pm_msg{padding:40px 24px 30px;font-size:16px;line-height:22px;text-align:center;color:#555;word-break:break-all}.pop_mod .pm_msg a{color:#ffae00}
+.pop_mod .pm_choose{padding-bottom:10px}.pop_mod .pm_choose li,.pop_mod .pm_choose a{height:38px;line-height:38px;padding-left:12px;font-size:16px;display:block;border-bottom:1px solid #e7e7e7;color:#8e8d8c}
+.pop_mod .pm_choose li:last-child,.pop_mod .pm_choose a:last-child{border-bottom:none}
+.pop_mod .pm_choose .cur,.pop_mod .pm_choose a:hover{color:#ffae00;border-bottom:1px solid #fffce4;position:relative;top:-1px;background:#fffce4 url(pop/ico_choose.png) 264px center no-repeat;background-size:18px 18px}
+.pop_mod .pm_form{width:264px;margin:0 auto}.pop_mod .pm_form .pm_fin{border:1px solid #b3b3b3;background:#fff;position:relative}.pop_mod .pm_form .pm_fin input,.pop_mod .pm_form .pm_fin span{height:32px;line-height:normal;width:242px;padding:0 10px;font-size:16px;border:0 none}
+.pop_mod .pm_form .pm_fin span{display:block;position:absolute;line-height:32px;z-index:6500;top:0;left:0;background:#fff;color:#f00}
+.pop_mod .pm_form .pm_ftxt{height:22px;margin:8px 0 10px;font-size:12px;line-height:22px;color:#888;overflow:hidden}.pop_mod .pm_form .pm_ftxt span{float:left}
+.pop_mod .pm_form .pm_ftxt a{float:right;color:#ffae00}
+.pop_mod .pm_handler{width:264px;margin:12px auto;overflow:hidden}.pop_mod .pm_handler li{height:38px;margin-bottom:4px;border:1px solid #e8e8e8;background:#fff;position:relative}.pop_mod .pm_handler li span{display:block;float:right;width:20px;height:20px;margin:10px 0 0 0;background:url(pop/ico_arrow.png) no-repeat;background-size:100%}
+.pop_mod .pm_handler li .tips{position:absolute;left:0;top:0;display:block;color:#333;font-size:14px;width:100%;height:40px;line-height:40px;padding-left:8px}
+.pop_mod .pm_handler .handler_con:hover{background:#f3f3f3}.pop_mod .pm_handler .handler_con:hover .tips{color:#808080}
+.pop_mod .pm_pds{height:194px;margin-bottom:8px;background:url(pop/pop_pds.jpg) no-repeat;background-size:100%}
