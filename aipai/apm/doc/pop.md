@@ -50,11 +50,35 @@
         con : function(thisPop){
         	//con有1个参数：thisPop指向pop对象本身
         	
-            var html = '';
+            var html = 'HelloWorld!';
             
             //处理  
                      
             return html;
+        }
+        //con里可以使用的组件：modChoose，具体看：[例子](http://donson.github.io/aipai/apm/doc/examples/example.html)
+        con : function(thisPop){
+        	//li模式
+        	var pmChoose = thisPop.modChoose({
+                    cur : '30', //当前选中key
+                    data : [
+                        ['50', '50'], //key, value
+                        ['30', '30'],
+                        ['20', '20'],
+                        ['10', '10']
+                    ] 
+                });
+            //链接模式
+            var pmChoose = thisPop.modChoose({
+            		type : 'link',
+            		data : [
+                        ['50', '50', 'http://www.aipai.com/'], //key, value, link
+                        ['30', '30', 'http://www.baidu.com/'],
+                        ['20', '20', 'http://www.qq.com/'],
+                        ['10', '10', 'http://www.163.com/]
+                    ] 
+            });
+            return pmChoose;
         }
     };
 ```
@@ -71,11 +95,11 @@
     	//href：默认为空值，如果传了值表示当前按钮是一个链接，优先级大于handler
     	//target：当href值不为空时，target设置当前按钮链接的打开方式
         btns : [{
-            text : '',
+            text : '取消',
             gray : true, 
             handler : 'close'
         }, {
-            text : '',
+            text : '打赏',
             handler : function($pop, thisPop){
                 //$pop
             	var $num = $pop;
