@@ -9,7 +9,6 @@
     opts = {
         ref     : null,     //参照目标
         refTop  : 0,
-        pos     : '',       //定位方向: '' || center
         isClose : true,
         con     : '',       //html代码
         btns : [{           //按钮
@@ -31,10 +30,76 @@
 * 参数ref & refTop 
 ```javascript
     opts = {
-        ref : $('#mod'),	//参照目标，传入一个af对象，以对象底部为参照
+        ref : $('#mod'),	//参照目标，传入一个$对象，以对象底部为参照
         refTop : 20			//对参照目标的一个偏移量，可以传负数
     };
 ```
+
+* 参数isClose
+```javascript
+    opts = {
+        isClose : true  	//是否显示右上角关闭按钮，默认true，`(true | false)`
+    };
+```
+
+* 参数con
+```javascript
+    opts = {
+    	//con 可以传html代码的字符串，也可以是一个Fun，返回html代码
+        con : '',  			//html代码
+        con : function(thisPop){
+        	//con有1个参数：thisPop指向pop对象本身
+        	
+            var html = '';
+            
+            //处理  
+                     
+            return html;
+        }
+    };
+```
+
+* 参数btns
+```javascript
+    opts = {
+    	//btns是一个数组，最多可以传2个对象
+    	//每个对象有 text, gray, handler, href, target 等值
+    	//text：是按钮的文字
+    	//gray：按钮的背景色，默认为false，传true会使当前按钮变灰色
+    	//handler : 'close' || Fun，传字符串'close'表示关闭，传Fun显示点击后执行此Fun
+    	//hanler Fun有2个参数，$pop是当前弹出层的$对象，thisPop指向pop对象本身
+    	//href：默认为空值，如果传了值表示当前按钮是一个链接，优先级大于handler
+    	//target：当href值不为空时，target设置当前按钮链接的打开方式
+        btns : [{
+            text : '',
+            gray : true, 
+            handler : 'close'
+        }, {
+            text : '',
+            handler : function($pop, thisPop){
+                //$pop
+            	var $num = $pop;
+
+            	//thisPop 
+            	thisPop.remove();
+            }
+        }]
+    };
+```
+* 参数onShow
+```javascript
+    opts = {
+    	//onShow有2个参数，$pop是当前弹出层的$对象，thisPop指向pop对象本身
+        onShow : function($pop, thisPop){
+            //$pop
+            var $num = $pop;
+
+            //thisPop 
+            thisPop.remove();
+        }
+    };
+```
+
 
 ##基本使用
 
@@ -167,3 +232,4 @@
         }
     });
 ```
+    };
