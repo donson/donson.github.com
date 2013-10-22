@@ -1,4 +1,4 @@
-#apm.pop API
+#pop API
 
 例子：[link](http://donson.github.io/aipai/apm/doc/examples/example.html)
 
