@@ -62,7 +62,7 @@
 * 参数btns
 ```javascript
     opts = {
-    	//btns是一个数组，最多可以传2个对象
+    	//btns是一个数组，最多可以传2个对象，如果传一个空有数组[]，表示没有按钮
     	//每个对象有 text, gray, handler, href, target 等值
     	//text：是按钮的文字
     	//gray：按钮的背景色，默认为false，传true会使当前按钮变灰色
