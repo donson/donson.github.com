@@ -1,6 +1,6 @@
 #pop API
 
-例子：[http://donson.github.io/aipai/apm/doc/examples/example.html](http://donson.github.io/aipai/apm/doc/examples/example.html)
+例子：[http://donson.github.io/aipai/apm/examples/example.html](http://donson.github.io/aipai/apm/examples/example.html)
 
 ##参数
 
@@ -56,7 +56,7 @@
                      
             return html;
         }
-        //con里可以使用的组件：modChoose，具体看：[例子](http://donson.github.io/aipai/apm/doc/examples/example.html)
+        //con里可以使用的组件：modChoose，具体看：[例子]
         con : function(thisPop){
         	//li模式
         	var pmChoose = thisPop.modChoose({
