@@ -2,6 +2,7 @@ define(function(require, exports, module) {
 
     var $ = require('$'),
         pop = require('pop');
+
     require('../css/pop.css');
 
     var example = {
