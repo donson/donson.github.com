@@ -1,7 +1,11 @@
 define(function(require, exports, module) {
 
     var $ = require('$'),
-        pop = require('pop');
+        pop = require('pop'),
+
+    
+
+    require('../css/pop.css');
 
     var example = {
         init : function(){
