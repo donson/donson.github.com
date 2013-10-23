@@ -1,6 +1,6 @@
 #pop API
 
-例子：[http://donson.github.io/aipai/apm/examples/example.html](http://donson.github.io/aipai/apm/examples/example.html)
+例子：[http://donson.github.io/aipai/apm/examples/pop.html](http://donson.github.io/aipai/apm/examples/pop.html)
 
 ##参数
 
