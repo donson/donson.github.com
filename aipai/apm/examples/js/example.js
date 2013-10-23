@@ -1,7 +1,7 @@
 define(function(require, exports, module) {
 
     var $ = require('$'),
-        pop = require('apm/pop');
+        pop = require('pop');
 
     var example = {
         init : function(){
@@ -17,7 +17,7 @@ define(function(require, exports, module) {
 
         },
         popAlert : function(){
-            var button = $.query('#pop_alert');
+            var button = $('#pop_alert');
 
             //=========
             button.click(function(){
@@ -29,7 +29,7 @@ define(function(require, exports, module) {
             
         },
         popConfirm : function(){
-            var button = $.query('#pop_confirm');
+            var button = $('#pop_confirm');
 
             //=========
             button.click(function(){
@@ -51,7 +51,7 @@ define(function(require, exports, module) {
             
         },
         popExa1 : function(){
-            var button = $.query('#pop_exa1');
+            var button = $('#pop_exa1');
 
             //=========
             button.click(function(){
@@ -77,7 +77,7 @@ define(function(require, exports, module) {
             
         },
         popExa2 : function(){
-            var button = $.query('#pop_exa2');
+            var button = $('#pop_exa2');
 
             //=========
             button.click(function(){

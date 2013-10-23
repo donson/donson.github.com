@@ -1,7 +1,6 @@
 define(function(require, exports, module) {
 
     var $ = require('$');
-        //apm = require('apm');
 
     //pop
     var pop = function(opts){
@@ -27,8 +26,8 @@ define(function(require, exports, module) {
         var _ts = this, 
             opts = this.opts;
         //基础属性
-        _ts.id = opts.id || 'pop_'+$.uuid();    //自动设置id
-        _ts.body = $.query('body');             //body
+        _ts.id = opts.id || 'pop_'+uuid();    //自动设置id
+        _ts.body = $('body');             //body
         _ts.bodyH = _ts.body.get(0).scrollHeight;   //body height
         _ts.win = $(window);                    //window
         _ts.winH = _ts.win.height();            //window height
@@ -146,17 +145,17 @@ define(function(require, exports, module) {
 
         //组装
         var html = '<div id="'+_ts.id+'" class="pop_mod" style="visibility:hidden;">'+titleEl+'<div class="pm_bd">'+conEl+'</div>'+btnsEl+closeEl+'</div>',
-            $popWrap = $.query('#pop_dialogs'),
-            $popOver = $.query('#pop_overlay');
+            $popWrap = $('#pop_dialogs'),
+            $popOver = $('#pop_overlay');
 
         if($popWrap.size() === 0 && $popOver.size() === 0){
             _ts.body.append('<div id="pop_dialogs">'+html+'</div><div id="pop_overlay" style="height:'+_ts.bodyH+'px;display:none;"></div>');
-            $popOver = $.query('#pop_overlay');
+            $popOver = $('#pop_overlay');
         }else{
             $popWrap.html(html);
         }
 
-        var $pop = _ts.pop = $.query('#'+_ts.id);
+        var $pop = _ts.pop = $('#'+_ts.id);
         _ts.popOver = $popOver;
         _ts.popH = $pop.offset().height;
         opts.pos = (opts.ref === null)? 'center' : opts.pos;
@@ -255,12 +254,20 @@ define(function(require, exports, module) {
         _ts = null;
     }
 
+    //uuid
+    var uuid = function(){
+        var S4 = function() {
+            return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+        };
+        return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+    }
+
     //页面滑动
     var popToTop = function(h,s){
         var nav_t = 0;
         var nav_d = 30;  //速度
         var nav_c = h;   //高度
-        var nac = $.query('body').get(0);
+        var nac = $('body').get(0);
         var popSc = function(t,b,c,d){
             return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
         }

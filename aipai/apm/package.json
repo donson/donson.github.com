@@ -1,0 +1,8 @@
+{
+  "family": "apm",
+  "name": "pop",
+  "version": "1.0.0",
+  "spm": {
+    "output": ["pop.js"]
+  }
+}

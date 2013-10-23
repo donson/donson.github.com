@@ -23,15 +23,14 @@
     </ul>
 </div>
 
-<script src="../lib/seajs/seajs/2.1.1/sea.js" id="seajsnode"></script>
+<script src="../../sea-modules/seajs/seajs/2.1.1/sea.js" id="seajsnode"></script>
 <script>
     // seajs 配置
     seajs.config({
-        base: "../lib/",
+        base: "../../sea-modules/",
         alias: {
-            "$" : "af/appframework-debug.js",
-            "apm" : "apm/apm.js",
-            "apm/pop" : "apm/pop.js"
+            "$" : "zepto/zepto/1.0.0/zepto",
+            "pop" : "apm/pop/1.0.0/pop"
         },
         preload: ['$'] 
     });
