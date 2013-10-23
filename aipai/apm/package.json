@@ -3,6 +3,9 @@
   "name": "pop",
   "version": "1.0.0",
   "spm": {
+    "alias": {
+        "$" : "zepto/zepto/1.0.0/zepto"
+    },
     "output": ["pop.js"]
   }
 }

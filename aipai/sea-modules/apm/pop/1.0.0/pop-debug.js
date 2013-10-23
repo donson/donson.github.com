@@ -1,5 +1,5 @@
-define("apm/pop/1.0.0/pop-debug", [ "$-debug" ], function(require, exports, module) {
-    var $ = require("$-debug");
+define("apm/pop/1.0.0/pop-debug", [ "zepto/zepto/1.0.0/zepto-debug" ], function(require, exports, module) {
+    var $ = require("zepto/zepto/1.0.0/zepto-debug");
     //pop
     var pop = function(opts) {
         //默认参数
