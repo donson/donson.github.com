@@ -15,7 +15,8 @@
             text : '关闭',
             handler : 'close'
         }],
-        onShow : function(){}
+        onShow : function(){},
+        onClose : function(){}
     };
 ```
 
@@ -120,6 +121,15 @@
 
             //thisPop 
             thisPop.remove();
+        }
+    };
+```
+* 参数onClose
+```javascript
+    opts = {
+    	//onClose是指在关闭当前弹出层时执行的方法
+        //onClose有2个参数，$pop是当前弹出层的$对象，thisPop指向pop对象本身
+        onClose : function($pop, thisPop){
         }
     };
 ```
