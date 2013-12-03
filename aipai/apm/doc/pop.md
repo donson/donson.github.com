@@ -125,7 +125,8 @@
     };
 ```
 * 参数onClose
-```javascript
+```javascript 
+
     opts = {
     	//onClose是指在关闭当前弹出层时执行的方法
         //onClose有2个参数，$pop是当前弹出层的$对象，thisPop指向pop对象本身
