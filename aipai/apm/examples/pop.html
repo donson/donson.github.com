@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport"/>
+    <title>pop</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!--<link rel="stylesheet" href="css/pop.css"/>-->
+    <style type="text/css">
+        .container{
+            padding:30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="doc">
+    <ul>
+        <li>1.一个简单的提示框 <button id="pop_alert">pop Alert</button></li>
+        <li>2.一个简单的确认框 <button id="pop_confirm">pop Confirm</button></li>
+        <li>3.Example1 <button id="pop_exa1">pop Example1</button></li>
+        <li>4.Example2 <button id="pop_exa2">pop Example2</button></li>
+    </ul>
+</div>
+
+<script src="../sea-modules/seajs/seajs/2.1.1/sea.js" id="seajsnode"></script>
+<script>
+    // seajs 配置
+    seajs.config({
+        base: "../sea-modules/",
+        alias: {
+            "$" : "zepto/zepto/1.0.0/zepto",
+            "pop" : "apm/pop/1.0.0/pop"
+        },
+        preload: ['$'] 
+    });
+
+    // 加载入口模块
+    seajs.use("./js/exa_pop.js");
+</script>
+
+</body>
+</html>
